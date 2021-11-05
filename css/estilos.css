@@ -1,0 +1,286 @@
+body
+{
+    margin-top: 82px;
+}
+
+.blog-footer {
+    padding: 1.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+
+.minh-100 {
+    height: 100vh;
+  }
+
+
+@font-face {
+    font-family: Lovelo-Black;
+    src: url('../fuentes/Lovelo-Black.otf');
+}
+@font-face {
+    font-family: Vision-Bold;
+    src: url('../fuentes/Vision-Bold.otf');
+}
+
+
+
+.LOS{color: #00c2cb; height: 40px; font-family: 'Lovelo-Black';}
+.PU {color: #7ed957; height: 40px; font-family: 'Lovelo-Black';}
+.ES {color: #33d6f5; height: 40px; font-family: 'Lovelo-Black';}
+.TE {color: #ee8aa8; height: 40px; font-family: 'Lovelo-Black';}
+.CI {color: #ffcd69; height: 40px; font-family: 'Lovelo-Black';}
+.TOS{color: #c193dc; height: 40px; font-family: 'Lovelo-Black';}
+
+.barraSup
+{
+    font-family: 'Lovelo-Black';
+}
+
+.bg_animate{
+    width: 100%;
+    height: 550px;
+    background: linear-gradient(to right, #6449df, #458aea);
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.line 
+{
+    background-color: #cbbded;
+    height: 5px;
+    width: 200px;
+    font-size: 28px;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    top: -15px;
+}
+
+.vision img
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 60px;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 550px;
+}
+
+.bannerTitle h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.bannerTitle .conocenos{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.banner_img{
+    animation: movimiento 2.5s linear infinite;
+}
+
+.banner_img img{
+    width: 400px;
+    display: block;
+}
+
+/* burbujas */
+
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.fondo
+{
+    background-color: #f8f8f8;
+}
+.paquetes
+{
+    font-family: 'Vision-Bold';
+    font-size: 60px;
+}
+.shadow {
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+}
+.textBanner h2
+{
+    color: #fff;
+    font-family: 'Vision-Bold';
+    font-size: 40px;
+}
+.conocenos
+{
+    color: white;
+    font-family: 'Vision-Bold';
+    font-size: 30px;
+}
+.txtColor
+{
+   color:  #5055e4;
+   font-size: 18px;
+}
+.txtTitle
+{
+    font-family: 'Vision-Bold';
+    font-size: 45px;
+    color: #5055e4;
+}
+
+.txtCuerpo
+{
+    font-family: 'Vision-Bold';
+    font-size: 20px;
+    color: #41516a;
+}
+
+.sprinkle {
+    position:absolute;
+    border-radius: 100vh;
+    z-index: 100;
+    animation: bounce-in-sprinkles 0.5s forwards;
+    box-shadow: 1.5vh 1.5vh 0 rgba(0, 0, 0, .25);
+}
+
+  
+.txtContact 
+{
+    font-family: 'Vision-Bold';
+    font-size: 25px;
+    color: #5055e4;
+}
